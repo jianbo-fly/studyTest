@@ -11,8 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class TestCas {
     public static void main(String[] args) {
         AtomicReference<Double> reference = new AtomicReference();
-       // reference.compareAndSet()
-        Lock lock = new ReentrantLock();
+        //Lock lock = new ReentrantLock();
         AtomicInteger atomicInteger = new AtomicInteger(1);
         Integer a = atomicInteger.incrementAndGet();
         System.out.println(a);

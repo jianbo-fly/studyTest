@@ -55,7 +55,7 @@ public class TestAqs {
         protected boolean tryAcquire(int arg) {
             if (compareAndSetState(0, 1)) {
                 setExclusiveOwnerThread(Thread.currentThread());
-                 return true;
+                return true;
             }
             return false;
         }
@@ -95,7 +95,7 @@ public class TestAqs {
 
         @Override
         public void lockInterruptibly() throws InterruptedException {
-            syn.acquireInterruptibly(1);
+             syn.acquireInterruptibly(1);
         }
 
         //拿锁，尝试一次
