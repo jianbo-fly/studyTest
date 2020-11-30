@@ -1,7 +1,6 @@
 package com.tangjianbo.concurrent;
 
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -15,6 +14,7 @@ public class TestAwaitSignal {
     private Integer number = 0;
     private final ReentrantLock reentrantLock = new ReentrantLock();
     Condition condition = reentrantLock.newCondition();
+
     /**
      * 奇数线程打印
      */
